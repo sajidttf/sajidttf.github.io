@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dan Khata — দান খাতা</title>
+  <meta name="description" content="Dan Khata (দান খাতা) is a free, ad-free Android app to keep a private record of zakat, sadaqah and other charity, with optional backup to the user's own Google Drive.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --g: #0B6B4F; --gd: #064A37; --soft: #E5F1EC; --gold: #C99A2E; --text: #17251F; --muted: #5E6E68; --line: #E3E9E6; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Hind Siliguri', system-ui, sans-serif; color: var(--text); background: #F3F6F4; line-height: 1.65; }
+    a { color: var(--g); }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+    header { background: linear-gradient(135deg, var(--g), var(--gd)); color: #fff; padding: 56px 0 64px; }
+    .brand { display: flex; align-items: center; gap: 14px; }
+    .logo { width: 56px; height: 56px; border-radius: 16px; background: rgba(255,255,255,.14); display: grid; place-items: center; font-size: 28px; }
+    h1 { margin: 0; font-size: 34px; line-height: 1.2; }
+    .tag { margin: 18px 0 0; font-size: 19px; opacity: .92; max-width: 620px; }
+    .en { color: var(--muted); font-size: 15px; }
+    header .en { color: rgba(255,255,255,.8); }
+    main { margin-top: -32px; }
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 24px; margin-bottom: 16px; }
+    h2 { margin: 0 0 12px; font-size: 22px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+    .feat { background: var(--soft); border-radius: 14px; padding: 16px; }
+    .feat b { display: block; font-size: 17px; }
+    .feat span { color: var(--muted); font-size: 14.5px; }
+    footer { padding: 28px 0 40px; color: var(--muted); font-size: 14px; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo">☾</div>
+        <div>
+          <h1>দান খাতা</h1>
+          <div class="en">Dan Khata — Zakat &amp; Charity Record</div>
+        </div>
+      </div>
+      <p class="tag">যাকাত, সদকা ও সব দানের ব্যক্তিগত হিসাব রাখার সহজ, বিজ্ঞাপনমুক্ত Android অ্যাপ।</p>
+      <p class="en">A simple, ad-free Android app to keep a private record of zakat, sadaqah and other charity.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>অ্যাপটি কী করে <span class="en">/ What the app does</span></h2>
+      <div class="grid">
+        <div class="feat"><b>দানের হিসাব</b><span>কবে, কত টাকা, কি কাজে, কাকে দান করলেন — লিখে রাখুন।<br>Record each donation: date, amount, purpose and recipient.</span></div>
+        <div class="feat"><b>যাকাত হিসাব</b><span>মাসিক আয় লিখলে ২.৫% হারে যাকাত, পরিশোধ ও বাকি নিজে থেকে হিসাব হয়।<br>Calculates zakat (2.5%) on monthly income, paid and remaining.</span></div>
+        <div class="feat"><b>ইংরেজি ও হিজরি তারিখ</b><span>ইংরেজি তারিখের সাথে হিজরি তারিখও দেখায়।<br>Gregorian dates with the Hijri date shown alongside.</span></div>
+        <div class="feat"><b>রিপোর্ট</b><span>মাস, ধরন ও খাত অনুযায়ী রিপোর্ট, Excel এ এক্সপোর্ট।<br>Reports by month, type and purpose; Excel export.</span></div>
+        <div class="feat"><b>Google Drive ব্যাকআপ</b><span>ইউজার চাইলে নিজের Google Drive এ ব্যাকআপ রাখতে পারেন।<br>Optional backup to the user's own Google Drive.</span></div>
+        <div class="feat"><b>গোপনীয়তা</b><span>কোনো বিজ্ঞাপন, ট্র্যাকিং বা সার্ভার নেই; পিন লক।<br>No ads, no tracking, no servers; optional PIN lock.</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Google Drive কেন ব্যবহার হয় <span class="en">/ Why Google Drive access</span></h2>
+      <p>ব্যবহারকারী নিজে "Google Drive সংযুক্ত করুন" চাপলে অ্যাপ তার Drive এ <b>"দান খাতা ব্যাকআপ"</b> নামে একটি ফোল্ডার তৈরি করে, সেখানে হিসাবের ব্যাকআপ ফাইল রাখে এবং প্রয়োজনে সেখান থেকে হিসাব ফেরত আনে। অ্যাপ শুধু নিজের তৈরি ফাইলগুলোই দেখতে পারে (<code>drive.file</code> অনুমতি) — Drive এর অন্য কোনো ফাইল নয়।</p>
+      <p class="en">When the user taps “Connect Google Drive”, the app creates a folder named “দান খাতা ব্যাকআপ” in the user's own Drive, stores backup files of the user's records there, and restores from them on request. It uses only the <code>drive.file</code> scope, so it can access only the files it created — nothing else in the user's Drive. The data is never sent to the developer or any third party.</p>
+      <p><a href="privacy.html"><b>গোপনীয়তা নীতি / Privacy Policy →</b></a></p>
+    </section>
+
+    <section class="card">
+      <h2>যোগাযোগ <span class="en">/ Contact</span></h2>
+      <p>ডেভেলপার: সাজিদ<br>ইমেইল: <a href="mailto:freelancersajid@gmail.com">freelancersajid@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>© ২০২৬ দান খাতা · <a href="privacy.html">Privacy Policy</a></footer>
+</body>
+</html>
